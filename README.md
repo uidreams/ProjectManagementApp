@@ -1,2 +1,0 @@
-# ProjectManagementApp
-Created with CodeSandbox
