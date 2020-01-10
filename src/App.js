@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import "./styles.css";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
+import Dashboard from './components/dashboard/Dashboard';
+//import Navbar from './components/layout/Navbar';
+
 
 
 class App extends Component {
@@ -9,7 +12,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar></Navbar>      
+          <Navbar/>
+          <Switch>
+            <Route path="/" component={Dashboard}/>      
+          </Switch>
         </div>
       </BrowserRouter>
     );
